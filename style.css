@@ -1,0 +1,301 @@
+:root {
+     --color1: #663300;
+     --color2: #cc9900;
+     --color3: #333300;
+     --color4: #cc6600;
+     --color5: #e2bd4d;
+     --white: #ffffff;
+}
+* {
+     margin: 0;
+     padding: 0;
+     /* font-family: "Harmattan", sans-serif;
+     font-size: 100%; */
+}
+
+/*-------------------------------------Navbar-------------------------------*/
+.navbar {
+     text-decoration: none;
+     margin-right: 40%;
+     transform: translate(40%, 30%);
+}
+.navbar:hover {
+     backdrop-filter: blur(100px);
+}
+.navbar > a {
+     padding-left: 20px;
+     text-decoration: none;
+     color: white;
+     font-size: 150%;
+}
+.menuicon {
+     width: 50px;
+     visibility: hidden;
+}
+.Button {
+     background: linear-gradient(var(--color2), var(--color5));
+     padding: 10px 0;
+     width: 250px;
+     border-radius: 30px;
+     box-shadow: var(--color2);
+     border: none;
+     font-weight: bold;
+}
+.Button:hover {
+     transform: translateY(-5px);
+     background: linear-gradient(var(--color1), var(--color4));
+     transition: 0.5s;
+     color: var(--white);
+}
+.sellerButton {
+     float: right;
+     margin-right: 5%;
+}
+
+.PuchaseButton {
+     margin-top: 28%;
+     margin-left: 29%;
+}
+
+.banner {
+     background-image: linear-gradient(
+               to bottom,
+               rgb(102, 51, 0, 0),
+               rgb(124, 65, 5)
+          ),
+          url("./Images/banner1.jpeg");
+     width: 100%;
+     height: 700px;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.banner > h1 {
+     font-family: "Licorice", cursive;
+     color: white;
+     text-align: center;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     position: absolute;
+     font-size: 100px;
+     user-select: none;
+}
+.banner > h3 {
+     font-family: "Stylish", sans-serif;
+     color: white;
+     text-align: center;
+     top: 30%;
+     left: 48%;
+     transform: translate(-40%, -40%);
+     position: absolute;
+     font-size: 50px;
+     user-select: none;
+}
+.logo > img {
+     width: 150px;
+     height: 150px;
+     float: left;
+     margin: 10px;
+}
+
+.title {
+     margin-top: 50px;
+     /* margin-bottom: 50px; */
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row-1 {
+     margin-top: 50px;
+     margin-left: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+.img1 {
+     width: 100%;
+     height: 100%;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     margin-right: 20px;
+     text-align: center;
+     margin-bottom: 5px;
+     margin-right: 30px;
+     display: flex;
+     flex-direction: column;
+}
+.img1 > h6 {
+     font-size: large;
+}
+.prd-img {
+     width: 100%;
+     height: 100%;
+     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+     margin-right: 20px;
+}
+.storename {
+     display: flex;
+     flex-direction: row;
+}
+.storename > a > img {
+     margin-left: 20px;
+     margin-right: 20px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     border: 2px solid gray;
+}
+.storename > h4 {
+     margin-top: 20px;
+}
+i.arrow {
+     margin-top: 13%;
+     font-size: 40px;
+     margin-right: 30px;
+}
+
+/* -----------------------------Banner2----------------------------------*/
+
+.banner2-img {
+     background-image: linear-gradient(
+               to left,
+               rgb(102, 51, 0, 0),
+               rgb(73, 37, 4)
+          ),
+          url("./Images/banner2.jpg");
+     background-size: cover;
+     width: 100%;
+     height: 500px;
+     margin-bottom: 100px;
+     padding-top: 20px;
+     
+}
+.banner2-img > h3 {
+     text-align: center;
+     color: var(--white);
+     font-style: oblique;
+     margin-top: 10px;
+     font-size: xx-large;
+     margin-bottom: 30px;
+     font-family: "Balsamiq Sans", cursive;l;
+}
+.banner2-content{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 10px;
+     /* margin: 20px; */
+}
+.banner2-bullets{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+.bullets{
+     margin-bottom: 10px;
+     display: flex;
+
+}
+.bullets > img{
+     width: 40px;
+     /* height: 30px; */
+}
+/* .bullets > i {
+     color: var(--white);
+     font-size: 20px;
+     margin-left: 20px;
+     margin-top: 7px;
+} */
+.bullets > h6{
+     font-family: "Balsamiq Sans", cursive;l;
+     font-size: 20px;
+     margin-left: 20px;
+     color: var(--white);
+
+}
+.banner2-bullets{
+     display: flex;
+     flex-direction: column;
+}
+.banner2-video > video{
+     width: 450px;
+     /* margin-top: 100px; */
+     margin-right:100px;
+}
+.location{
+     display: flex;
+     flex-direction: column;
+     color: var(--white);
+     font-size: xx-large;
+     /* margin-left: 15%; */
+}
+.location > .firstloc{
+     margin-top: 5%;
+     margin-bottom: 7%;
+     display: flex;
+     flex-direction: row;
+}
+.location > .firstloc > i{
+     margin-left: 15%;
+}
+.location > .secondloc{
+     display: flex;
+     flex-direction: row;
+}
+.location > .secondloc > i{
+     /* margin-left: 22%; */
+}
+/* -------------------------------------------Media Query---------------------------- */
+
+@media (min-width: 320px) and (max-width: 768px) {
+     .navbar {
+          visibility: hidden;
+          background: none;
+          float: left;
+          /* width: 400px; */
+          margin-left: 0;
+     }
+     .navbar > a {
+          display: flex;
+          flex-direction: column-reverse;
+          /* clear: right; */
+          width: 100%;
+          text-align: left;
+     }
+     .menuicon {
+          visibility: visible;
+          margin-left: 0;
+          text-align: left;
+     }
+     .sellerButton {
+          margin-top: 50%;
+     }
+     .logo > img {
+          float: right;
+          width: 100px;
+          height: 80px;
+     }
+     .banner {
+          height: 400px;
+     }
+     .banner > h3 {
+          font-size: 120%;
+          top: 20%;
+     }
+     .banner > h1 {
+          font-size: 220%;
+          top: 30%;
+     }
+     .Button {
+          width: 90px;
+          padding: auto;
+     }
+     .sellerButton {
+          margin-top: 40%;
+          margin-left: 60%;
+          position: absolute;
+     }
+     .PuchaseButton {
+          margin-top: 40%;
+          margin-left: 18%;
+     }
+}

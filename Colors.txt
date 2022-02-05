@@ -1,0 +1,14 @@
+Hex: #663300
+RGB: 102, 51, 0
+
+Hex: #CC9900
+RGB: 204, 153, 0
+
+Hex: #333300
+RGB: 51, 51, 0
+
+Hex: #CC6600
+RGB: 204, 102, 0
+
+Don't Touch folders:
+js,css,img
