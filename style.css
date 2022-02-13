@@ -5,41 +5,22 @@
      --color4: #cc6600;
      --color5: #e2bd4d;
      --white: #ffffff;
+     --grey : grey;
 }
 * {
      margin: 0;
      padding: 0;
-     /* font-family: "Harmattan", sans-serif;
-     font-size: 100%; */
 }
 
-/*-------------------------------------Navbar-------------------------------*/
-.navbar {
-     text-decoration: none;
-     margin-right: 40%;
-     transform: translate(40%, 30%);
-}
-.navbar:hover {
-     backdrop-filter: blur(100px);
-}
-.navbar > a {
-     padding-left: 20px;
-     text-decoration: none;
-     color: white;
-     font-size: 150%;
-}
-.menuicon {
-     width: 50px;
-     visibility: hidden;
-}
+/* ---------------------Commons-------------------------*/
 .Button {
      background: linear-gradient(var(--color2), var(--color5));
-     padding: 10px 0;
-     width: 250px;
+     padding: 20px 30px;
      border-radius: 30px;
      box-shadow: var(--color2);
      border: none;
      font-weight: bold;
+     margin-top: 20px;
 }
 .Button:hover {
      transform: translateY(-5px);
@@ -47,16 +28,44 @@
      transition: 0.5s;
      color: var(--white);
 }
+/*-------------------------------------Header-------------------------------*/
+.header{
+     display:flex;
+     flex-direction:row;
+     justify-content:space-between;
+     align-items: flex-start;
+}
+.logo > img {
+     width: 150px;
+     height: 150px;
+     float: left;
+     margin: 10px;
+}
+.navbar {
+     text-decoration: none;
+     margin-top: 20px;
+     display: flex; 
+}
+.navbar > a {
+     padding: 20px;
+     text-decoration: none;
+     color: white;
+     font-size: 150%;
+     height: 30px;
+}
+.navbar a:hover {
+     background-color: var(--grey);
+     border-radius:20px;
+}
+.menuicon {
+     width: 50px;
+     visibility: hidden;
+}
+
 .sellerButton {
-     float: right;
      margin-right: 5%;
 }
-
-.PuchaseButton {
-     margin-top: 28%;
-     margin-left: 29%;
-}
-
+/* ----------------------Banner----------------------------*/
 .banner {
      background-image: linear-gradient(
                to bottom,
@@ -64,38 +73,32 @@
                rgb(124, 65, 5)
           ),
           url("./Images/banner1.jpeg");
-     width: 100%;
-     height: 700px;
+     /* width: 100%; */
+     height: 500px;
      background-repeat: no-repeat;
      background-size: cover;
-}
-.banner > h1 {
-     font-family: "Licorice", cursive;
-     color: white;
-     text-align: center;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     position: absolute;
-     font-size: 100px;
-     user-select: none;
+     display: flex;
+     flex-direction: column;
+     
 }
 .banner > h3 {
      font-family: "Stylish", sans-serif;
      color: white;
      text-align: center;
-     top: 30%;
-     left: 48%;
-     transform: translate(-40%, -40%);
-     position: absolute;
      font-size: 50px;
      user-select: none;
 }
-.logo > img {
-     width: 150px;
-     height: 150px;
-     float: left;
-     margin: 10px;
+.banner > h1 {
+     font-family: "Licorice", cursive;
+     color: white;
+     text-align: center;
+     font-size: 100px;
+     user-select: none;
+}
+
+.PuchaseButton {
+    margin-left: 40%;
+     width: 20%;
 }
 
 .title {
@@ -183,7 +186,6 @@ i.arrow {
      flex-direction: row;
      justify-content: space-between;
      padding: 10px;
-     /* margin: 20px; */
 }
 .banner2-bullets{
      display: flex;
@@ -199,12 +201,7 @@ i.arrow {
      width: 40px;
      /* height: 30px; */
 }
-/* .bullets > i {
-     color: var(--white);
-     font-size: 20px;
-     margin-left: 20px;
-     margin-top: 7px;
-} */
+
 .bullets > h6{
      font-family: "Balsamiq Sans", cursive;l;
      font-size: 20px;
@@ -241,9 +238,7 @@ i.arrow {
      display: flex;
      flex-direction: row;
 }
-.location > .secondloc > i{
-     /* margin-left: 22%; */
-}
+
 /* -------------------------------------------Media Query---------------------------- */
 
 @media (min-width: 320px) and (max-width: 768px) {
