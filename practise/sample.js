@@ -1,3 +1,5 @@
+"use strict";
+
 productScroll();
 
 function productScroll() {
@@ -57,33 +59,13 @@ function getCount(parent, getChildrensChildren) {
      return relevantChildren;
 }
 
-// Code to Add New-item
-// <button onclick="addImage()" id="Image-BTN">Add Image</button>
+// Code To Add Image to slider
+
 // function addImage() {
-//      var new_item = `<li class="item-a"><div class="box">
-//      <!--img-box---------->
-//      <div class="slide-img">
-//           <img
-//                src="./Images/Girls/kidG1.jpg"
-//                alt="1"
-//           />
-//           <!--overlayer---------->
-//           <div class="overlay">
-//                <!--buy-btn------>
-//                <a href="#" class="buy-btn">Buy Now</a>
-//           </div>
-//      </div>
-//      <!--detail-box--------->
-//      <div class="detail-box">
-//           <!--type-------->
-//           <div class="type">
-//                <a href="#">Rabbed Cardigan</a>
-//                <span>Noe Arrival</span>
-//           </div>
-//           <!--price-------->
-//           <a href="#" class="price">$23</a>
-//      </div>
-// </div>
-// </li>`;
-//      $(".slide-girls").append(new_item);
+//      var img = document.createElement("img");
+//      img.setAttribute(
+//           "src",
+//           "https://www.google.co.in/images/srpr/logo11w.png"
+//      );
+//      document.getElementById("slide").appendChild(img);
 // }
